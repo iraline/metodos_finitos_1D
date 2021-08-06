@@ -79,7 +79,7 @@ while nSeg <20:
     potnV = []
 
     #Capacitancia
-    C = e0*e2*(L*L*(matSaida[nSeg-1][0] - matSaida[nSeg-2][0]))/(matSaida[nSeg-1][0] - matSaida[0][0])
+    C = e0*e2*(L*L*(matSaida[nSeg-1][0] - matSaida[nSeg-2][0]))/((matSaida[nSeg-1][0] - matSaida[0][0])*l)
 
     print('A capacitância para N=' + str(nSeg) + ' é ' + str(C) + 'F')
     
